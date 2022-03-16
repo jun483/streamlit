@@ -1,0 +1,11 @@
+expander1 = st.expander('問い合わせ1')
+expander1.write('問い合わせ内容を書く1')
+expander1.write('問い合わせ内容を書く1-2')
+expander1.write('問い合わせ内容を書く1-3')
+expander2 = st.expander('問い合わせ2')
+expander2.write('問い合わせ内容を書く2')
+expander3 = st.expander('問い合わせ3')
+expander3.write('問い合わせ内容を書く3')
+
+
+エクスパンダの仕方

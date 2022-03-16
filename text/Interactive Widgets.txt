@@ -1,0 +1,32 @@
+import streamlit as st
+import numpy as np
+import pandas as pd
+import PIL
+from PIL import Image
+
+
+
+st.title('Streamlit 超入門')
+
+st.write('Interactive Widgets')
+
+text = st.text_input('あなたの趣味を教えてください。')
+'あなたの趣味:', text
+
+condition = st.slider('あなたの今の調子は？',0, 100, 50)
+'コンディション', condition
+
+# st.write('Display Image')
+
+# option = st.selectbox(
+#     'あなたが好きな数字を教えてください。',
+#     list(range(1, 11))
+# )
+# 'あなたの好きな数字は、', option, 'です。'
+
+
+# if st.checkbox('Show Image'):
+#     img = Image.open('ema.jpg')
+#     st.image(img, caption='ema', use_column_width=True)
+# チェックボックスはIF分を使うことでチェックを入れる（True）と表示される.IF分は:と４マス開ける
+

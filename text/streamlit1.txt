@@ -1,0 +1,59 @@
+import streamlit as st
+import numpy as np
+import pandas as pd
+import PIL
+from PIL import Image
+
+
+
+st.title('Streamlit 超入門')
+
+st.write('Display Image')
+img = Image.open('ema.jpg')
+st.image(img, caption='ema', use_column_width=True)
+
+#st.write('DataFrame')
+
+#df = pd.DataFrame({
+    #'１列目': [1,2,3,4],
+    #'２列目': [10,20,30,40]
+#})
+
+# st.dataframe(df, width=100, height=100)
+# st.write(df) でも同じように表は表示されるが大きさを指定する場合はなどは引数が入っていないので変わらない。
+# 縦と横の大きさを指定する場合はst.dataframe を使う。
+
+# st.dataframe(df.style.highlight_max(axis=0))
+# 一番大きい値にハイライトをつける。列につける場合はaxis=0 行はaxis=1
+
+#st.table(df.style.highlight_max(axis=0))
+# 静的な表の時に使う。ただ表を出したいとき。
+# もっと表について知りたい場合はstreamlit.com api reference display dataに色いろと書いてある
+
+#"""
+# 章
+## 節
+### 項
+
+#
+# '''python
+#import streamlit as st
+#import numpy as np
+#import pandas as pd
+#'''
+
+#"""
+# """ を三つでマークダウン #見出し１、##見出し２ '''はなんのコードを書くかでこの場合はpythonを表している
+# display testでマジックコマンドの書き方が出ている
+
+#df = pd.DataFrame(
+#    np.random.rand(20,3),
+#    columns=['a', 'b', 'c']
+#)
+#正規分布
+#st.line_chart(df)#折れ線グラフ
+#st.area_chart(df)#色付けされたエリアチャート
+#st.bar_chart(df)#棒グラフ　
+
+# df = pd.DataFrame(np.random.rand(100, 2)/[50,50] + [35.69, 139.70], columns=["lat", "lon"])
+# st.map(df)
