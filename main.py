@@ -1,8 +1,4 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-import PIL
-from PIL import Image
 import time
 
 
@@ -33,24 +29,3 @@ expander2 = st.expander('問い合わせ2')
 expander2.write('問い合わせ内容を書く2')
 expander3 = st.expander('問い合わせ3')
 expander3.write('問い合わせ内容を書く3')
-
-# text = st.text_input('あなたの趣味を教えてください。')
-# condition = st.slider('あなたの今の調子は？',0, 100, 50)
-
-# 'あなたの趣味:', text
-# 'コンディション', condition
-
-# st.write('Display Image')
-
-# option = st.selectbox(
-#     'あなたが好きな数字を教えてください。',
-#     list(range(1, 11))
-# )
-# 'あなたの好きな数字は、', option, 'です。'
-
-
-# if st.checkbox('Show Image'):
-#     img = Image.open('ema.jpg')
-#     st.image(img, caption='ema', use_column_width=True)
-# チェックボックスはIF分を使うことでチェックを入れる（True）と表示される.IF分は:と４マス開ける
-
